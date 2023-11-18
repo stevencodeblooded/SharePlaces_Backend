@@ -9,7 +9,13 @@ const usersRoutes = require('./routes/users-routes')
 const app = express()
 
 app.use(bodyParser.json())
-app.use(cors())
+
+const corsOptions = {
+    origin: 'https://shareplacesonline.netlify.app',
+    optionsSuccessStatus: 200,
+};
+  
+app.use(cors(corsOptions));
 
 app.use('/assets', express.static('assets'))
 
