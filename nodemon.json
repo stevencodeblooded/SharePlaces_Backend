@@ -1,7 +1,7 @@
 {
+    "exec": "node -r dotenv/config server.js",
     "env": {
-        "DB_USER": "stevencodeblooded",
-        "DB_PASSWORD": "A1UOPy0y3FeiXXQ7",
-        "DB_NAME": "SharePlaces"
-    }
+        "NODE_ENV": "development"
+    },
+    "ext": "js json"
 }
